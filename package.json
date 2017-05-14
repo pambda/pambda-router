@@ -1,0 +1,38 @@
+{
+  "name": "pambda-router",
+  "version": "0.0.1",
+  "description": "Pambda for routing",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pambda/pambda-router/issues"
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "eslint": "^3.19.0"
+  },
+  "homepage": "https://github.com/pambda/pambda-router",
+  "keywords": [
+    "aws",
+    "lambda",
+    "pambda"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pambda/pambda-router.git"
+  },
+  "scripts": {
+    "build": "npm run lint && babel -d lib/ src/",
+    "lint": "eslint src"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
