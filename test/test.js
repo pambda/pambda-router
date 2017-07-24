@@ -2,19 +2,26 @@ const test = require('tape');
 const { router } = require('..');
 
 test('test', t => {
-  t.plan(6);
+  t.plan(8);
 
   const echoLambda = (event, context, callback) => callback(null, event);
   const errorLambda = (event, context, callback) => callback(new Error());
 
   const pambda = router()
     .get('/', next => echoLambda)
+    .head('/', next => echoLambda)
     .get(['/array/0', '/array/1'], next => echoLambda)
     .toPambda();
 
   const lambda = pambda(errorLambda);
 
   lambda({ path: '/', httpMethod: 'GET' }, {}, (err, result) => {
+    t.error(err);
+
+    t.equal(result.path, '/');
+  });
+
+  lambda({ path: '/', httpMethod: 'HEAD' }, {}, (err, result) => {
     t.error(err);
 
     t.equal(result.path, '/');
