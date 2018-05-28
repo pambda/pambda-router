@@ -1,6 +1,6 @@
 # pambda-router
 
-Pambda for routing.
+[Pambda](https://github.com/pambda/pambda) for routing.
 
 ## Installation
 

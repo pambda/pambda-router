@@ -1,6 +1,6 @@
 # pambda-router
 
-ルーティングのための Pambda.
+ルーティングのための [Pambda](https://github.com/pambda/pambda).
 
 ## Installation
 
