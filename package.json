@@ -1,6 +1,6 @@
 {
   "name": "pambda-router",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Pambda for routing",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
