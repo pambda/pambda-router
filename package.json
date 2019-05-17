@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "lambda-callbackify": "0.0.1",
-    "pambda": "0.0.4",
+    "pambda": "^0.1.0",
     "path-to-regexp": "^2.2.1"
   },
   "devDependencies": {
