@@ -9,7 +9,7 @@
   "dependencies": {
     "lambda-callbackify": "0.0.1",
     "pambda": "^0.1.0",
-    "path-to-regexp": "^2.2.1"
+    "path-to-regexp": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
