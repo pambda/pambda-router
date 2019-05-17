@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-npm i pambda-router -S
+npm i pambda-router
 ```
 
 ## Usage
